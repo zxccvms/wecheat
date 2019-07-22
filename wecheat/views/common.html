@@ -1,0 +1,10 @@
+<script>
+	$.ajax({
+		async:false,
+		url:'/api/user/isLogin',
+	}).then((res)=>{
+		if(res.meta.state!=200){
+			location.href='/login';
+		}
+	})
+</script>

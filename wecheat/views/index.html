@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Direct Messaging</title>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div class="left">
+					<div class="top">
+						<input type="text" placeholder="Search" />
+						<a href="javascript:;" class="search"></a>
+					</div>
+					<ul class="people">
+					</ul>
+				</div>
+				<div class="right">
+					<div class="top"><span>To: <span class="name"></span></span></div>
+					<div class="cheat" style="height: 100%;"></div>
+					<!-- 聊天窗口 -->
+					<div class="write">
+						<a href="javascript:;" class="write-link attach"></a>
+						<input type="text" class="content" />
+						<a href="javascript:;" class="write-link smiley"></a>
+						<a href="javascript:;" class="write-link send"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		{{include './common.html'}}
+		<script src="https://cdn.bootcss.com/socket.io/2.2.0/socket.io.js"></script>
+		<script src="js/cheat.js"></script>
+		<!-- <script src="js/index.js"></script> -->
+	</body>
+
+</html>
